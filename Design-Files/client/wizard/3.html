@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Client</title>
+
+    <!-- core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="../../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1>
+                        <a href="#">
+                            <img src="../../assets/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn-sign-out pull-right">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header><!--/header-->
+
+<section class="container wizard-content care-needs">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="wizard-steps">
+                <li class="selected">
+                    <span class="fa fa-user"></span>
+                    <span>About Recipient</span>
+                </li>
+                <li class="selected">
+                    <span class="fa fa-th-list"></span>
+                    <span>Care Needs</span>
+                </li>
+                <li class="selected">
+                    <span class="fa fa-clock-o"></span>
+                    <span>First Care</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form action="#">
+                <h2>WHEN DO YOU NEED CARE?</h2>
+
+                <h3>Let us know when you need the care to start</h3>
+
+                <ul class="care-start-options">
+                    <li>
+                        <label>
+                            <input type="radio" name="care-start" checked><span></span> This Week
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="care-start"><span></span> This Month
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="care-start"><span></span> Not Sure
+                        </label>
+                    </li>
+                </ul>
+            </form>
+            <div class="clearfix">
+                <a href="2.html" class="btn-main btn-back">Back</a>
+                <a href="../care_recipient.html" class="btn-main btn-next" id="btn-time-need">Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!------------------------------Modal-window----------------->
+
+<div id="myModalBox-time-need" class="modal fade simple-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div>You have successfully added a care recipient. Homage will
+                    contact you for a care assessment within 1 working day
+                </div>
+                <a href="../care_recipient.html" class="btn btn-enter btn-modal-inner">Done</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/bootstrap-rating.min.js"></script>
+<script src="../../assets/js/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar.js"></script>
+<script src="../../assets/js/calendar_events.js"></script>
+<script src="../../assets/js/jquery-ui.js"></script>
+<script src="../../assets/js/jquery.cookie.js"></script>
+<script src="../../assets/js/moment-with-locales.js"></script>
+<script src="../../assets/js/bootstrap-datetimepicker.js"></script>
+<script src="../../assets/js/dropzone.js"></script>
+
+<script src="../../assets/js/main.js"></script>
+<!--     <script src="../../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../../assets/js/jquery.isotope.min.js"></script> -->
+<!-- 	<script src="../../assets/js/wow.min.js"></script> -->
+</body>
+</html>

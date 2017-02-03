@@ -1,0 +1,236 @@
+@import url(fonts.css);
+/* content structure */
+@media only screen and (max-width: 530px) {
+	.navbar {
+	    height: 45px!important;
+	}
+}
+.navbar .navbar-inner .navbar-container {
+	height:45px;
+}
+.navbar .navbar-brand {
+	margin-left:-80px;
+	margin-top:-27px;
+}
+.navbar .navbar-inner {
+	background:#000000;
+}
+.navbar-container {
+	border-bottom: 3px solid #30C3A9!important;
+}
+.navbar .navbar-brand small .logo {
+	display: block;
+	background-image: url(../img/mobile_logo.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	height: 87px;
+	width: 272px;
+	margin: 0;
+	-webkit-transform: scale(0.35);
+	-ms-transform: scale(0.35);
+	transform: scale(0.35);
+}
+.navbar-nav a {
+	color:#30C3A9;
+}
+.navbar-nav>li>a {
+	font-family: "Montserrat", sans-serif;
+	font-size:15px;
+	padding-bottom:5px;
+}
+@media (min-width: 768px) {
+	.navbar-nav>li>a {
+		padding-top: 25px;
+	}
+	.navbar-nav li a:hover::after,
+	.navbar-nav li a:focus {
+		content:"";
+		position:absolute;
+		left:15%;
+		right:15%;
+		bottom:0;
+		border-bottom:2px solid #30C3A9;
+	}
+}
+@media (max-width: 768px) {
+	.navbar-nav li a:hover::after,
+	.navbar-nav li a:focus {
+		content:"";
+		position:absolute;
+		left:2%;
+		right:78%;
+		bottom:0;
+		border-bottom:2px solid #30C3A9;
+	}
+}
+.navbar-toggle {
+	margin-top:15px;
+	margin-bottom:0;
+	color:#30C3A9;
+	font-size:20px;
+}
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background:transparent;
+}
+.nav-tabs>li.active>a {
+	border-top: 2px solid #a0d468;
+}
+.breadcrumb>li>a {
+	color:#30C3A9;
+}
+.page-header {
+	background:#30C3A9;
+	height:60px;
+}
+.page-header .header-title h1 {
+	font-family: "Montserrat";
+	line-height: 55px;
+	font-size: 2.25rem;
+	color: #fff;
+	font-weight: 700!important;
+	display: block;
+	text-transform: uppercase;
+}
+.form-horizontal .form-group {
+	margin-right:0;
+	margin-left:0;
+}
+.bordered-homage {
+	border-color:#30C3A9!important;
+}
+.page-sidebar .sidebar-menu {
+	margin-top:40px;
+}
+/* content structure ends*/
+/* home */
+.page-header .header-buttons {
+	right: 8px;
+	top: 14px;
+}
+.databox .databox-left .fa{
+	font-size:45px;
+}
+.databox .bg-themethirdcolor {
+	background-color:#a0d468!important;
+}
+.databox .themethirdcolor {
+	color:#a0d468!important;
+}
+.page-header .header-buttons label {
+	line-height: 50px;
+}
+#map {
+	width:100%;
+	height:500px;
+}
+.map-legend .order-item .fa {
+	font-size:30px;
+}
+.map-legend .order-item span {
+	line-height:30px;
+}
+#plotarea, #pie, #barmonth, #baryear {
+	width: 100%;
+	height:400px;
+}
+/* dashboard ends */
+/* client profile */
+.profile-container .profile-header {
+	box-shadow: none!important;
+}
+.table-striped>tbody>tr:nth-child(odd) {
+	background-color:#F2FFF1!important;
+}
+.payment .databox-title {
+	font-weight: bold!important;
+	font-size:20px!important;
+}
+.payment .databox-text {
+	font-size: 14px!important;
+}
+.payment .databox-right {
+	line-height: 60px;
+}
+/*client profile ends*/
+/*case request*/
+.request .radio-inline{
+	padding-left: 0!important;
+}
+.request .checkbox, .care-services .checkbox, .skills .checkbox, .experience .checkbox, .activities .checkbox{
+	display:inline-block!important;
+}
+.request .checkbox {
+	width: 105px;
+}
+.experience .checkbox {
+	width:170px;
+}
+.care-services .checkbox{
+	width:188px;
+}
+.skills .checkbox {
+	width:215px;
+}
+.activities .checkbox {
+	width:240px;
+}
+.widget-tab {
+	margin-left:-12px;
+}
+.carepro .databox-xlg {
+	height:160px!important;
+}
+/*
+.care-services .radius-bordered {
+	border:1px solid #34cdb2;
+	background:#34cdb2;
+}
+.care-services span {
+	color:#ffffff;
+	font-size:14px;
+	line-height:30px;
+}
+.care-services .box-top {
+	overflow: hidden;
+}
+.care-services .box-top img, .care-services .radius-bordered{
+	border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+}
+.care-services .box-top img {
+	height:150px;
+	width:100%;
+}
+/*case request ends*/
+/*staff starts*/
+.staff-info .databox{
+	margin-bottom:0!important;
+}
+
+/* field_wrapper */
+
+.field_wrapper input {
+	height:34px;
+	margin:10px; 
+}
+
+.field_wrapper select {
+	height:34px;
+	margin:10px; 
+}
+
+.remove_icon {
+	padding: 14px 10px;
+    color: #F00;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.add_icon {
+	padding: 14px 10px;
+    color: #090;
+    font-size: 2em;
+	cursor: pointer;
+}
+

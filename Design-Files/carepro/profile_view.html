@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CarePro</title>
+
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-logo">
+                        <h1>
+                            <a href="#">
+                                <img src="../assets/images/logo.png" alt="">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse main-nav" id="collapse">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="calendar_view.html">Care Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="case_upcoming.html">My Cases</a>
+                                    </li>
+                                    <li>
+                                        <a href="payment_view.html">Payment</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="edit_profile_view.html">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="document_view.html">My Documents</a>
+                                    </li>
+                                    <li class="header-btn">
+                                        <a href="../index.html" class="btn-out">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!--/header-->
+
+<section class="container wizard-content preview-profile">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <img src="../assets/images/preview_photo.jpg" class="user-img-load" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-6 user-info">
+            <h2>LIM KIM SEAH</h2>
+
+            <div><span class="fa fa-check-circle"></span>Verified by Homage</div>
+            <ul class="clearfix">
+                <li>
+                    <span>District  :  </span>
+                    <span>PUNNGOL</span>
+                </li>
+                <li class="half-width">
+                    <span>Gender   :  </span>
+                    <span>MALE</span>
+                </li>
+                <li class="half-width">
+                    <span>Age   :  </span>
+                    <span>24</span>
+                </li>
+                <li>
+                    <span>Race  : </span>
+                    <span>Chinese</span>
+                </li>
+                <li>
+                    <span>Rating : </span>
+                    <span>
+                        <input type="hidden" class="rating" data-filled="fa fa-star" data-empty="fa fa-star-o" value="3"
+                               data-readonly/>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-7">
+            <h3>Profile Summary</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi in pulvinar urna. Curabitur varius lectus eu libero pretium consectetur. In eu neque libero.
+                Praesent rhoncus a justo ac finibus. Nam eget imperdiet justo. Donec eget felis id massa malesuada
+                hendrerit eu nec nibh. Donec cursus augue in orci varius pharetra. Vivamus lacinia malesuada.</p>
+        </div>
+        <div class="col-xs-12 col-sm-5 menu-accordion">
+            <h3>Skill Set</h3>
+            <div class="panel-group" id="accordion">
+                <!-- Panel-1 -->
+                <div class="panel panel-default">
+                    <!-- Header-panel-1 -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="accordion-toggle collapsed care-medication">Medication Reminder</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <!-- Content-panel-1 -->
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Service #1</a></li>
+                                <li><a href="#">Service #2</a></li>
+                                <li><a href="#">Service #3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel-2 -->
+                <div class="panel panel-default">
+                    <!-- Header-panel-2 -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title ">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="accordion-toggle collapsed care-visit">House Visitation</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <!-- Content-panel-2 -->
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Service #1</a></li>
+                                <li><a href="#">Service #2</a></li>
+                                <li><a href="#">Service #3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel-3 -->
+                <div class="panel panel-default">
+                    <!-- Header-panel-3 -->
+                    <div class="panel-heading">
+                        <h4 class="panel-title ">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="accordion-toggle collapsed care-active">Staying Active</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <!-- Content-panel-3 -->
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">Service #1</a></li>
+                                <li><a href="#">Service #2</a></li>
+                                <li><a href="#">Service #3</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <video id="video">
+                <source src="../assets/video/cat.mp4" type="video/mp4">
+                <source src="../assets/video/cat.ogv" type="video/ogg">
+            </video>
+            <a href="#" id="btn-play"></span></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Previous Tasks / Ratings</h3>
+            <ul class="previous-task-rating">
+                <li>
+                    <div class="clearfix">
+                        <div class="pull-left date">
+                            20 April 2016
+                        </div>
+                        <div class="pull-right rating-review">
+                            <span>Rating</span>
+                            <input type="hidden" class="rating" data-filled="fa fa-star" data-empty="fa fa-star-o" value="4"
+                                   data-readonly/>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                                volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat."<span> - </span><span>Jonathan</span></p>
+                        </blockquote>
+                        <ul class="abstract">
+                            <li class="care-active">Staying Active</li>
+                            <li class="care-house">Personal Grooming</li>
+                            <li class="care-personal">House Keeping</li>
+                        </ul>
+                        <a href="#" class="review-more"><span class="fa fa-chevron-right"></span></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="clearfix">
+                        <div class="pull-left date">
+                            20 April 2016
+                        </div>
+                        <div class="pull-right rating-review">
+                            <span>Rating</span>
+                            <input type="hidden" class="rating" data-filled="fa fa-star" data-empty="fa fa-star-o" value="4"
+                                   data-readonly/>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <blockquote>
+                            <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat
+                                volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat."<span> - </span><span>Jonathan</span></p>
+                        </blockquote>
+                        <ul class="abstract">
+                            <li class="care-active">Staying Active</li>
+                            <li class="care-house">Personal Grooming</li>
+                            <li class="care-personal">House Keeping</li>
+                        </ul>
+                        <a href="#" class="review-more"><span class="fa fa-chevron-right"></span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-rating.min.js"></script>
+<script src="../assets/js/moment.min.js"></script>
+<script src="../assets/js/fullcalendar.js"></script>
+<script src="../assets/js/calendar_events.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+<script src="../assets/js/jquery.cookie.js"></script>
+<script src="../assets/js/moment-with-locales.js"></script>
+<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+<script src="../assets/js/dropzone.js"></script>
+
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

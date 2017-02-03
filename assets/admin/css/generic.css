@@ -1,0 +1,289 @@
+/* generic classes*/
+.relative{position:relative;}
+.auto{margin:0 auto;}
+.no_data, .no-data{text-align:center !important; font-style: italic;}
+.vtop{vertical-align: top !important;}
+.fixed{position:fixed;}
+.rem {text-decoration:line-through;}
+.options{width: 160px;}
+a{cursor: pointer;}
+small{line-height: 10px;}
+
+.m10{margin-bottom:10px;}
+.m20{margin-bottom:20px;}
+.m30{margin-bottom:30px;}
+.m40{margin-bottom:40px;}
+
+
+.r{color:red;}
+.d{font-size: 11px; color:gray;  margin-bottom:10px;}
+.hint{font-size: 11px; color:#999;  margin-bottom:10px;}
+.sub{font-size: 12px;}
+.err{ color: red; font-size:12px; font-weight: normal;}
+.border_red{border-color: red !important;}
+.err p{margin:0; padding:0;}
+
+
+#loader{
+	display:none; 
+	height:100%; 
+	text-align:center;  
+	z-index:2000;  
+	position: fixed;  
+	left:0;  
+	top:0;  
+	width:100%;
+	background: #E0E0E0 url(../img/ajax-loader.gif) center center no-repeat;
+	opacity:0.4; 
+	filter:alpha(opacity=40); 
+
+}
+@media (max-width: 1024px){
+
+  #per_page {padding-left: 1px; padding-right:1px;}
+}
+@media (max-width: 768px){
+  #clear_btn {
+    display: none;
+  }
+}
+
+
+/** bootstrap changes **/
+.alert p{margin: 0 0 1px 0; font-size: 12px; line-height: 15px; padding: 0;}
+.alert { margin-bottom: 5px;}
+
+.pagination { margin: 0;}
+
+
+h1{text-transform: capitalize;}
+/*label{margin-top: 7px;}*/
+.counter{
+	color: #777;	
+	font-size:11px;
+	margin-top: -15px;
+  padding-right:10px;
+  text-align: right
+}
+.counter.warning{
+	color: red;
+}
+.modal form {margin-bottom:0;}
+
+.form-actions{
+	margin-top: 10px;
+}
+.box-header form{
+	padding: 2px;
+}
+
+table .glyphicon-off{
+	background: #999;
+	border-radius: 25px;
+	padding: 2px 4px;
+	line-height: 1.42857143;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	
+}
+table .glyphicon-ok{
+	background: #78cd51;
+	border-radius: 25px;
+	padding: 2px 4px;
+	line-height: 1.42857143;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	
+}
+td.img{
+	padding: 0;
+}
+
+
+
+/*** sortable css **/
+th.headerSortUp { 
+    background-image: url(../img/asc.gif); 
+     padding-left:20px !important
+} 
+th.headerSortDown { 
+    background-image: url(../img/desc.gif); 
+     padding-left:20px !important;
+} 
+th.header {    
+    cursor: pointer; 
+    font-weight: bold; 
+    background-repeat: no-repeat; 
+    background-position: center left;    
+    margin-left: -1px; 
+} 
+
+
+/******* twitter typehead plugin css fixes ***/
+
+
+.twitter-typeahead {
+  width: 100%;
+}
+.tt-dropdown-menu {
+   width:100%;        
+}
+
+.twitter-typeahead .tt-hint
+{
+	width: 100%;
+    display: block;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border: 1px solid transparent;
+    border-radius:4px;
+}
+
+.twitter-typeahead .hint-small
+{
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    line-height: 1.5;
+}
+
+.twitter-typeahead .hint-large
+{
+    height: 45px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+    line-height: 1.33;
+}
+
+.twitter-typeahead{
+width:100%;
+}
+
+.twitter-typeahead .tt-query,
+.twitter-typeahead .tt-hint {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+          box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+  width:100%;        
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: #fff;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: #fff;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
+
+
+.database-tables .opt{
+  display: none;
+  float:right;
+}
+.database-tables li:hover .opt
+{
+  display: block;
+}
+
+.database-tables li{
+  padding:2px 5px 2px 20px;
+}
+
+.database-tables{
+  max-height: 250px;
+  overflow-y:auto;
+}
+td.img{
+  padding: 1px !important;
+}
+.panel-content form input{
+	margin-bottom: 8px;	
+}
+
+tfoot{
+  font-weight: bold;
+
+}
+td.td-qty{
+  width: 50px !important;
+}
+.row-qty input{
+  border: 1px solid #eee;
+  text-align: center;
+}
+.form-control[readonly]{
+  background-color: white;
+}
+
+.tip{
+  border-bottom: 1px dashed #333;
+  color: #333;
+  cursor: pointer;
+}
+
+/************ file upload plugin *********/
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 20px;
+  direction: ltr;
+  cursor: pointer;
+  height: 60px;
+}
+
+.fc-event.event-Pending, .ev-Pending{ background: #deb652; border-color: #b18e11;}
+.fc-event.event-Assigned, .ev-Assigned{ background: #2dc3e8; border-color: #27a3c1;}
+.fc-event.event-Completed, .ev-Completed{ background: #8cc474; border-color:  #709c5d;}
+.fc-event.event-Declined, .ev-Declined{ background: #fb6e52; border-color:  #d85e46}
+.fc-event.event-Cancelled, .ev-Cancelled{ background: #fb6e52; border-color: #d85e46}
+.fc-event.event-Not, .ev-Not{ background: #deb652; border-color: #b18e11;}
+.fc-event.event-Confirmed, .ev-Confirmed{ background: #8cc474; border-color: #709c5d;}

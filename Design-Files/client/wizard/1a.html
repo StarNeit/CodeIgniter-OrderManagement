@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Client</title>
+
+    <!-- core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1>
+                        <a href="#">
+                            <img src="../../assets/images/logo.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#" class="btn btn-sign-out pull-right">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header><!--/header-->
+
+<section class="container wizard-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="wizard-steps">
+                <li class="selected">
+                    <span class="fa fa-user"></span>
+                    <span>About Recipient</span>
+                </li>
+                <li>
+                    <span class="fa fa-th-list"></span>
+                    <span>Care Needs</span>
+                </li>
+                <li>
+                    <span class="fa fa-clock-o"></span>
+                    <span>First Care</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Who needs care?</h2>
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="col-xs-12 col-sm-6">
+            <a href="#" class="btn-main btn-care-inverse">Loved one</a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <a href="1b.html" class="btn-main btn-care">Myself</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <form action="#" class="relationship">
+                <label for="Relationship">Relationship</label>
+                <select name="Relationship" id="Relationship">
+                    <option value="0" selected>Father</option>
+                    <option value="1">Mother</option>
+                    <option value="2">Other</option>
+                </select>
+            </form>
+            <div class="title-form">Tell us more</div>
+            <form action="#" class="about-info about-recipient">
+                <ul>
+                    <li>
+                        <label for="Salutation">Salutation</label>
+                        <select name="Salutation" id="Salutation">
+                            <option value="0" selected>Ms</option>
+                            <option value="1">Mr</option>
+                        </select>
+                    </li>
+                    <li class="half">
+                        <ul>
+                            <li>
+                                <label for="name">First Name</label>
+                                <input type="text" value="" placeholder="" name="name" id="name">
+                            </li>
+                            <li>
+                                <label for="surname">Last Name</label>
+                                <input type="text" value="" placeholder="" name="surname" id="surname">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label>Date Of Birth</label>
+                        <ul class="clearfix birthday">
+                            <li>
+                                <select name="date-of-birth" id="select1">
+                                    <option value="0" selected>01</option>
+                                    <option value="1">02</option>
+                                    <option value="2">03</option>
+                                    <option value="3">04</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="month-of-birth" id="select2">
+                                    <option value="0" selected>01</option>
+                                    <option value="1">02</option>
+                                    <option value="2">03</option>
+                                    <option value="3">04</option>
+                                </select>
+                            </li>
+                            <li>
+                                <select name="year-of-birth" id="select3">
+                                    <option value="0" selected>1957</option>
+                                    <option value="1">1958</option>
+                                    <option value="2">1959</option>
+                                    <option value="3">1960</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="half">
+                        <ul>
+                            <li>
+                                <label for="Religion">Religion</label>
+                                <input type="text" value="" placeholder="" name="Religion" id="Religion">
+                            </li>
+                            <li class="clearfix">
+                                <label for="select5">Race</label>
+                                <select name="year-of-birth" id="select5">
+                                    <option value="0" selected>Chinese</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="half">
+                        <ul>
+                            <li>
+                                <label for="select4">Gender</label>
+                                <select name="year-of-birth" id="select4">
+                                    <option value="0" selected>Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="weight">Weight</label>
+                                <input type="text" value="" placeholder="KG" name="weight" id="weight">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="half">
+                        <ul>
+                            <li>
+                                <label for="number">NRIC No.</label>
+                                <input type="text" name="number" id="number" value="" placeholder="S1234567A">
+                            </li>
+                            <li>
+                                <label for="height">Height</label>
+                                <input type="text" value="" placeholder="CM" name="height" id="height">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="check-list_wrap">
+                        <label>Do you have any language requests?</label>
+                        <ul class="check-list clearfix">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> English
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Mandarin
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Malay
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Tamil
+                                </label>
+                            </li>
+                            
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span>Hokkien
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Teochew
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Cantonese
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Hakka
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Hainanese
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="language" value=""/><span></span> Others
+                                </label>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="medical">
+                        <label>Diagnosis:</label>
+                        <textarea name="medical-condition" id="medical-condition" cols="30" rows="10"></textarea>
+                    </li>
+                    <li class="medical">
+                        <label>Medical Condition:</label>
+                        <textarea name="medical-condition" id="medical-condition" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+            </form>
+            <div class="clearfix">
+                <a href="2.html" class="btn-main btn-next">Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/bootstrap-rating.min.js"></script>
+<script src="../../assets/js/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar.js"></script>
+<script src="../../assets/js/calendar_events.js"></script>
+<script src="../../assets/js/jquery-ui.js"></script>
+<script src="../../assets/js/jquery.cookie.js"></script>
+<script src="../../assets/js/moment-with-locales.js"></script>
+<script src="../../assets/js/bootstrap-datetimepicker.js"></script>
+
+<script src="../../assets/js/main.js"></script>
+
+<!--     <script src="../../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../../assets/js/jquery.isotope.min.js"></script> -->
+<!-- 	<script src="../../assets/js/wow.min.js"></script> -->
+</body>
+</html>

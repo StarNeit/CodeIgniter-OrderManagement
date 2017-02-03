@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 1.0.0
+Purchase: http://wrapbootstrap.com
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Homage - Staff</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Custom styles-->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <div class="logo"></div>
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="daily_view.html">
+                            <i class="menu-icon fa fa-gears"></i>
+                            <span class="menu-text"> Operations </span>
+                        </a>
+                    </li>
+                    <!--Databoxes-->
+                    <li>
+                        <a href="carepro_view.html">
+                            <i class="menu-icon fa fa-heartbeat"></i>
+                            <span class="menu-text"> CarePro </span>
+                        </a>
+                    </li>
+                    <!--Widgets-->
+                    <li>
+                        <a href="client_view.html">
+                            <i class="menu-icon fa fa-user"></i>
+                            <span class="menu-text"> Client </span>
+                        </a>
+                    </li>
+                    <!--Profile-->
+                    <li class="active">
+                        <a href="case_view.html">
+                            <i class="menu-icon fa fa-file-text"></i>
+                            <span class="menu-text"> Cases </span>
+                        </a>
+                    </li>
+                    <!--Calendar-->
+                    <li>
+                        <a href="billing_view.html">
+                            <i class="menu-icon fa fa-calendar"></i>
+                            <span class="menu-text"> Billing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="staff_view.html">
+                            <i class="menu-icon fa fa-edit"></i>
+                            <span class="menu-text"> Staff Management </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="active">Cases</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1>
+                            Cases
+                        </h1>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                    <!-- Tabs -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs" id="myTab7">
+                                    <li class="active">
+                                        <a href="case_view.html">
+                                            Unassigned/Declined
+                                            <span class="badge badge-success">
+                                                4
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="tab-red">
+                                        <a href="case_view.html">
+                                            Assigned
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="case_view.html">
+                                            Accepted
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="case_view.html">
+                                            Started
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="case_view.html">
+                                            Completed
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="case_view.html">
+                                            Failed/Cancelled
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content radius-bordered">
+                                    <div class="tab-pane in active">
+                                        <!--Registration Form Starts-->
+                                        <div class="row">
+                                            <div class="form-group col-lg-3">
+                                                <span class="input-icon inverted">
+                                                    <input type="text" class="form-control input-sm">
+                                                    <i class="glyphicon glyphicon-search bg-blue"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-sm-12 col-xs-12">
+
+                                                <div class="table-responsive">
+                                                <table class="table table-hover table-striped">
+                                                    <thead class="bordered-palegreen">
+                                                        <tr>
+                                                            <th>
+                                                                #
+                                                            </th>
+                                                            <th>
+                                                                Date Requested
+                                                            </th>
+                                                            <th>
+                                                                Care Recipient
+                                                            </th>
+                                                            <th>
+                                                                Visit No.
+                                                            </th>
+                                                            <th>
+                                                                Care Pro
+                                                            </th>
+                                                            <th>
+                                                                Payment
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                1
+                                                            </td>
+                                                            <td>
+                                                                2-Apr-16
+                                                            </td>
+                                                            <td>
+                                                                <a href="case_detail.html">Siah Hong Siew</a>
+                                                            </td>
+                                                            <td>
+                                                                02042016
+                                                            </td>
+                                                            <td>
+                                                                Pending
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge badge-success">
+                                                                    <i class="fa fa-check"></i>
+                                                                </span>
+                                                                100.00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                2
+                                                            </td>
+                                                            <td>
+                                                                23-Mar-16
+                                                            </td>
+                                                            <td>
+                                                                <a href="case_detail.html">Siah Hong Siew</a>
+                                                            </td>
+                                                            <td>
+                                                                23032016
+                                                            </td>
+                                                            <td>
+                                                                Pending
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge badge-default">
+                                                                    <i class="fa fa-close"></i>
+                                                                </span>
+                                                                10.00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                3
+                                                            </td>
+                                                            <td>
+                                                                21-Feb-16
+                                                            </td>
+                                                            <td>
+                                                                <a href="case_detail.html">Desmond Tan</a>
+                                                            </td>
+                                                            <td>
+                                                                21022016
+                                                            </td>
+                                                            <td>
+                                                                Pending
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge badge-default">
+                                                                    <i class="fa fa-close"></i>
+                                                                </span>
+                                                                100.00
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                4
+                                                            </td>
+                                                            <td>
+                                                                2-Feb-16
+                                                            </td>
+                                                            <td>
+                                                                <a href="case_detail.html">Siah Hong Siew</a>
+                                                            </td>
+                                                            <td>
+                                                                02022016
+                                                            </td>
+                                                            <td>
+                                                                Pending
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge badge-success">
+                                                                    <i class="fa fa-check"></i>
+                                                                </span>
+                                                                45.00
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <!--/Registration Form Ends-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br/><br/>
+                    <!--/tabs-->
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+
+    </div>
+
+</div>
+<!-- /Page Body -->
+</div>
+<!-- /Page Content -->
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+<!--Basic Scripts-->
+<script src="assets/js/jquery-2.0.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="assets/js/beyond.js"></script>
+
+<!--Easy Pie Charts Needed Scripts-->
+<script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+<script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+
+
+
+
+<!--Google Analytics::Demo Only-->
+<script>
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-52103994-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+<!--  /Body -->
+</html>

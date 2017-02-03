@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CarePro</title>
+
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/dropzone.css" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/jquery-ui.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-logo">
+                        <h1>
+                            <a href="#">
+                                <img src="../assets/images/logo.png" alt="">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse main-nav" id="collapse">
+                                <ul class="clearfix">
+                                    <li class="active">
+                                        <a href="edit_profile_view.html">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="document_view.html">My Documents</a>
+                                    </li>
+                                    <li>
+                                        <a href="payment_view.html">Payment</a>
+                                    </li>
+                                    <li class="header-btn">
+                                        <a href="../index.html" class="btn-out">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!--/header-->
+
+<section class="container wizard-content update-profile">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="profile-menu clearfix">
+                <ul class="profile-menu clearfix">
+                    <li  class="active"><a href="javascript:void(0);">Update Profile</a></li>
+                    <li><a href="account_view.html">Account Settings</a></li>
+                </ul>
+            </ul>
+
+            <h2>Update Profile</h2>
+
+            <p>Keep your profile updated at all times. Upon saving, your profile
+                will be submitted to Homage for review.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="user-img">
+              <form action="upload-target.php" id="userimage" class="dropzone"></form>
+                <!--<div>Drag & Drop Image Here</div>-->
+                <!--<div>Only .png and .jpg files are accepted.</div>-->
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <form action="#" class="update-profile-info">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </li>
+                    <li>
+                        <label for="district">District</label>
+                        <input type="text" name="district" id="district">
+                    </li>
+                    <li class="half-form">
+                        <ul class="clearfix">
+                            <li>
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender">
+                                    <option value="0" selected>Male</option>
+                                    <option value="1">Female</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="race">Race</label>
+                                <input type="text" name="race" id="race">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label for="birthday">Date of Birth</label>
+                        <input type="text" name="birthay" id="birthday" placeholder="DD/MM/YYYY" class="inp-bg-arrow">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 question-block">
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="question1">Question 1 :</label>
+                        <textarea name="question1" id="question1" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <label for="question2">Question 2 :</label>
+                        <textarea name="question2" id="question2" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <label for="question3">Question 3 :</label>
+                        <textarea name="question3" id="question3" cols="30" rows="10"></textarea>
+                    </li>
+                    <li>
+                        <label for="video">Update HD Video { This is how the field looks like. It will be hidden
+                            }</label>
+                        <input type="text" name="video" id="video" placeholder="Youtube Embedded Link">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+          <div class="care-title">Type of Care</div>
+
+          <ul class="clearfix update-profile-care">
+            <li>
+              <input type="checkbox" name="medication_reminders"/>
+              <div>
+                <img src="../assets/images/care_medication.png" alt="Medication Reminders">
+
+                <div>Medication Reminders</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="escort_services"/>
+              <div>
+                <img src="../assets/images/care_escort.png" alt="Escort Services">
+
+                <div>Escort Services</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="companionship"/>
+              <div>
+                <img src="../assets/images/care_companion.png" alt="Companionship">
+
+                <div>Companionship</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="description" id="medication_reminders">
+            <fieldset>
+              <ul>
+                <li>
+                  <label>
+                    <input type="checkbox" name="skillsets" value=""/> <span></span> Remind senior to take medication
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="skillsets"  value=""/> <span></span> Assist to feed senior pre-packed
+                    medication
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="skillsets" value=""/> <span></span> Others
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="description" id="escort_services">
+            <h4>Escort Services</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <div class="description" id="companionship">
+            <h4>Companionship</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <ul class="clearfix update-profile-care">
+            <li>
+              <input type="checkbox" name="staying_active"/>
+              <div>
+                <img src="../assets/images/care_active.png" alt="Staying Active">
+
+                <div>Staying Active</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="house_keeping"/>
+              <div>
+                <img src="../assets/images/care_house.png" alt="House Keeping">
+
+                <div>House Keeping</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="personal_care"/>
+              <div>
+                <img src="../assets/images/care_personal.png" alt="Personal Care & Hygiene">
+
+                <div>Personal Care & Hygiene</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="description" id="staying_active">
+            <h4>Staying Active</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <div class="description" id="house_keeping">
+            <h4>House Keeping</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <div class="description" id="personal_care">
+            <h4>Personal Care & Hygiene</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <ul class="clearfix update-profile-care">
+            <li>
+              <input type="checkbox" name="check_in_visit"/>
+              <div>
+                <img src="../assets/images/care_visit.png" alt="Check In Visit">
+
+                <div>Check In Visit</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="meal_prep_groceries"/>
+              <div>
+                <img src="../assets/images/care_meal.png" alt="Meal Prep & Groceries">
+
+                <div>Meal Prep & Groceries</div>
+              </div>
+            </li>
+            <li>
+              <input type="checkbox" name="night_surveillance"/>
+              <div>
+                <img src="../assets/images/care_surveillance.png" alt="Night Surveillance">
+
+                <div>Night Surveillance</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="description" id="check_in_visit">
+            <h4>Check In Visit</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <div class="description" id="meal_prep_groceries">
+            <h4>Meal Prep & Groceries</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+          <div class="description" id="night_surveillance">
+            <h4>Night Surveillance</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget
+              enim elementum dictum. Nullam diam urna, maximus a tellus in, ultricies pharetra velit. Lorem ipsum
+              dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim. Nunc hendrerit ante eget.</p>
+          </div>
+
+     </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 clearfix">
+            <a href="profile_view.html" class="btn-main btn-next">Update</a>
+        </div>
+    </div>
+</section>
+
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!------------------------------Modal-window----------------->
+
+<div id="myModalBox_update" class="modal fade update-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="title-modal">Thank you! We will proceed with the phone interview if you are shortlisted.</div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 active">
+                                    <span class="fa fa-file-o" aria-hidden="true"></span>
+                                    <h3>Online Application</h3>
+                                    <p>You have completed the online application.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                    <h3>Phone Interview</h3>
+                                    <p>Our staff will chat with you to develop a better understanding.</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <span class="fa fa-users" aria-hidden="true"></span>
+                                    <h3>Face-to-Face Interview</h3>
+                                    <p>You will be invited to our office for a short interview and introduction to Homage.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-default btn-modal-inner" data-dismiss="modal">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-rating.min.js"></script>
+<script src="../assets/js/moment.min.js"></script>
+<script src="../assets/js/fullcalendar.js"></script>
+<script src="../assets/js/calendar_events.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+<script src="../assets/js/jquery.cookie.js"></script>
+<script src="../assets/js/moment-with-locales.js"></script>
+<script src="../assets/js/bootstrap-datetimepicker.js"></script>
+<script src="../assets/js/dropzone.js"></script>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

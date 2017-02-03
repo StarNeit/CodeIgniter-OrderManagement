@@ -1,0 +1,804 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 1.0.0
+Purchase: http://wrapbootstrap.com
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Homage - Staff</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Custom styles-->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <div class="logo"></div>
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="daily_view.html">
+                            <i class="menu-icon fa fa-gears"></i>
+                            <span class="menu-text"> Operations </span>
+                        </a>
+                    </li>
+                    <!--Databoxes-->
+                    <li class="active">
+                        <a href="carepro_view.html">
+                            <i class="menu-icon fa fa-heartbeat"></i>
+                            <span class="menu-text"> CarePro </span>
+                        </a>
+                    </li>
+                    <!--Widgets-->
+                    <li>
+                        <a href="client_view.html">
+                            <i class="menu-icon fa fa-user"></i>
+                            <span class="menu-text"> Client </span>
+                        </a>
+                    </li>
+                    <!--Profile-->
+                    <li>
+                        <a href="case_view.html">
+                            <i class="menu-icon fa fa-file-text"></i>
+                            <span class="menu-text"> Cases </span>
+                        </a>
+                    </li>
+                    <!--Calendar-->
+                    <li>
+                        <a href="billing_view.html">
+                            <i class="menu-icon fa fa-calendar"></i>
+                            <span class="menu-text"> Billing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="staff_view.html">
+                            <i class="menu-icon fa fa-edit"></i>
+                            <span class="menu-text"> Staff Management </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li><a href="carepro_view.html">CarePro</a></li>
+                        <li class="active">Lim Ai Xian</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1>
+                            Lim Ai Xian
+                        </h1>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                    <!-- Tabs -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs" id="myTab7">
+                                    <li class="active">
+                                        <a href="carepro_detail.html">
+                                            Personal Info
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="carepro_skills.html">
+                                            Skills & Qualifications
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="carepro_background.html">
+                                            Background Check
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="carepro_document.html">
+                                            Documents
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="carepro_payment.html">
+                                            Payment
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content radius-bordered">
+                                    <div class="tab-pane in active">
+                                        <!--Registration Form Starts-->
+                                        <div class="row">
+                                            <div class="col-lg-12 col-sm-12 col-xs-12">
+
+
+                                                <form id="registrationForm" method="post" class="form-horizontal"
+                                                data-bv-message="This value is not valid"
+                                                data-bv-feedbackicons-valid="glyphicon glyphicon-ok"
+                                                data-bv-feedbackicons-invalid="glyphicon glyphicon-remove"
+                                                data-bv-feedbackicons-validating="glyphicon glyphicon-refresh">
+
+                                                <div class="form-title">
+                                                    About CarePro
+                                                </div>
+
+                                                <div class="profile-container">
+                                                    <div class="profile-header row">
+                                                        <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                                                            <img src="assets/img/avatars/aixian.jpg" alt="" class="header-avatar" />
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-8 col-sm-12 profile-info">
+                                                            <!-- Upload Logo -->
+                                                            <div class="form-group">
+                                                                <div class="header-fullname">Profile Picture</div><br/><br/>
+                                                                <div class="btn btn-info">
+                                                                    <input type="file" class="file-input-extensions" data-browse-class="btn btn-info btn-sm" data-show-remove="false" data-show-caption="false" data-show-upload="false" multiple="multiple">
+                                                                </div>
+                                                                <span class="help-block">Only JPEG, JPG, GIF and PNG extensions are allowed.</span>
+                                                            </div>
+                                                            <!-- /upload logo -->
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 profile-stats">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value palegreen">3</div>
+                                                                    <div class="stats-title">UPCOMING</div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value info">3</div>
+                                                                    <div class="stats-title">PENDING</div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value blueberry">12</div>
+                                                                    <div class="stats-title">COMPLETED</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    <i class="glyphicon glyphicon-map-marker"></i> Punggol East
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    Rating: <strong>4.3 / 5</strong>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    Age: <strong>62</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-title">
+                                                    Basic Information
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="col-lg-1">
+                                                            <div class="form-group">
+                                                                <label for="registrationInput">Salutation</label>
+                                                                <div class="input-group-btn">
+                                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Mdm <span class="caret"></span></button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><a href="#">Ms</a></li>
+                                                                        <li class="divider"></li>
+                                                                        <li><a href="#">Mrs</a></li>
+                                                                        <li class="divider"></li>
+                                                                        <li><a href="#">Mr</a></li>
+                                                                        <li class="divider"></li>
+                                                                        <li><a href="#">Dr</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                           <div class="form-group">
+                                                            <label for="nameInput">First Name:</label>
+                                                            <input type="text" class="form-control" name="firstName" placeholder="First Name"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Last Name:</label>
+                                                            <input type="text" class="form-control" name="lastName" placeholder="Last Name"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="form-group">
+                                                            <label for="regidateInput">Gender:</label>
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Female <span class="caret"></span></button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Male</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Female</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="regidateInput">Date of Birth:</label>
+                                                            <div class="input-group">
+                                                                <input class="form-control date-picker" id="id-date-picker-1" type="text" data-date-format="dd-mm-yyyy">
+                                                                <span class="input-group-addon">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="regidateInput">Nationality:</label>
+                                                            <div class="input-group-btn">
+                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Singaporean <span class="caret"></span></button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li><a href="#">Malaysian</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Others</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">NRIC:</label>
+                                                            <input type="text" class="form-control" name="lastName" placeholder="S1234567A"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Race:</label>
+                                                            <input type="text" class="form-control" name="lastName" value="Chinese"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Religion:</label>
+                                                            <input type="text" class="form-control" name="lastName" value="Buddhism"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Height:</label>
+                                                            <input type="text" class="form-control" name="lastName" placeholder="CM"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Weight:</label>
+                                                            <input type="text" class="form-control" name="lastName" placeholder="KG"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-title">
+                                                Contact Information
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="emailInput">Email: </label>
+                                                            <input type="text" class="form-control" name="email" placeholder="example@mail.com"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="mobileInput">Home:</label>
+                                                            <input type="text" class="form-control" name="mobile" placeholder="+99-9999-9999" data-mask="+99-9999-9999"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="mobileInput">H/P:</label>
+                                                            <input type="text" class="form-control" name="mobile" placeholder="+99-9999-9999" data-mask="+99-9999-9999"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="nameInput">Postal Code: </label>
+                                                            <input type="text" class="form-control" name="fullname" value="123456"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="cardInput">Unit. No: </label>
+                                                            <input type="text" class="form-control" name="cardno" value="#00-0000"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="cvcInput">Block No.: </label>
+                                                            <input type="text" class="form-control" name="cvc" value="123"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="cvcInput">Street: </label>
+                                                            <input type="text" class="form-control" name="cvc" value="Street Name Avenue 123"
+                                                            data-bv-notempty="true"
+                                                            data-bv-notempty-message="This field is required and cannot be empty." />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-title">
+                                                Other Information
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 request">
+                                                        Do you have any language requests?<br/>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue" checked="checked">
+                                                                <span class="text">English</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue" checked="checked">
+                                                                <span class="text">Mandarin</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Malay</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Tamil</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Hokkien</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Teochew</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Cantonese</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Hakka</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Hainanese</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Others</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 request">
+                                                        Are you suffering from any medical conditions, including neck and back problem?<br/>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">No</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue" checked="checked">
+                                                                <span class="text">Yes</span>
+                                                            </label>
+                                                        </div>
+                                                        <br/><br/>
+                                                        <div class="form-group">
+                                                        <label for="xsinput">Specify:</label>
+                                                        <input type="text" class="form-control" id="xsinput" value="I suffer from back problems due to a sports injury">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 request">
+                                                        Are you on any medication?<br/>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue" checked="checked">
+                                                                <span class="text">No</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">Yes</span>
+                                                            </label>
+                                                        </div>
+                                                        <br/><br/>
+                                                        <div class="form-group">
+                                                        <label for="xsinput">Specify:</label>
+                                                        <input type="text" class="form-control" id="xsinput" value="-">
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 request">
+                                                        Do you have a smart phone?<br/>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue">
+                                                                <span class="text">No</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" class="colored-blue" checked="checked">
+                                                                <span class="text">Yes</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-title">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-lg-6 pull-right">
+                                                    <input class="btn btn-palegreen pull-right" type="submit" value="Save" />
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                                <!--/Registration Form Ends-->
+
+                            </div>
+
+                        </div>
+                        <br/>
+                        <div class="widget">
+                            <div class="widget-header bg-palegreen">
+                                <i class="widget-icon fa fa-arrow-down"></i>
+                                <span class="widget-caption">Cases In-charge</span>
+                                <div class="widget-buttons">
+                                    <a href="#" data-toggle="collapse">
+                                        <i class="fa fa-minus"></i>
+                                    </a>
+                                </div><!--Widget Buttons-->
+                            </div><!--Widget Header-->
+                            <div class="widget-body">
+
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-xs-12">
+
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped">
+                                                <thead class="bordered-palegreen">
+                                                    <tr>
+                                                        <th>
+                                                            #
+                                                        </th>
+                                                        <th>
+                                                            Date Requested
+                                                        </th>
+                                                        <th>
+                                                            Care Recipient
+                                                        </th>
+                                                        <th>
+                                                            Visit No.
+                                                        </th>
+                                                        <th>
+                                                            Payment
+                                                        </th>
+                                                        <th>
+                                                            Remarks
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>
+                                                            2-Apr-16
+                                                        </td>
+                                                        <td>
+                                                            <a href="case_detail.html">Siah Hong Siew</a>
+                                                        </td>
+                                                        <td>
+                                                            02042016
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-success">
+                                                                <i class="fa fa-check"></i>
+                                                            </span>
+                                                            100.00
+                                                        </td>
+                                                        <td>
+                                                            Paid
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>
+                                                            23-Mar-16
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);">Siah Hong Siew</a>
+                                                        </td>
+                                                        <td>
+                                                            23032016
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-default">
+                                                                <i class="fa fa-close"></i>
+                                                            </span>
+                                                            10.00
+                                                        </td>
+                                                        <td>
+                                                            Collect Cash
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                        <td>
+                                                            21-Feb-16
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);">Desmond Tan</a>
+                                                        </td>
+                                                        <td>
+                                                            21022016
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-default">
+                                                                <i class="fa fa-close"></i>
+                                                            </span>
+                                                            100.00
+                                                        </td>
+                                                        <td>
+                                                            Collect Cash
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>
+                                                            2-Feb-16
+                                                        </td>
+                                                        <td>
+                                                            <a href="javascript:void(0);">Siah Hong Siew</a>
+                                                        </td>
+                                                        <td>
+                                                            02022016
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge badge-success">
+                                                                <i class="fa fa-check"></i>
+                                                            </span>
+                                                            45.00
+                                                        </td>
+                                                        <td>
+                                                            Paid
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div><!--Widget Body-->
+                    </div>
+                </div>
+
+            </div>
+            <br/><br/>
+            <!--/tabs-->
+        </div>
+        <!-- /Page Body -->
+    </div>
+    <!-- /Page Content -->
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+</div>
+<!-- /Page Body -->
+</div>
+<!-- /Page Content -->
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+<!--Basic Scripts-->
+<script src="assets/js/jquery-2.0.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="assets/js/beyond.js"></script>
+
+<!--Easy Pie Charts Needed Scripts-->
+<script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+<script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+
+
+
+
+<!--Google Analytics::Demo Only-->
+<script>
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-52103994-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+
+</body>
+<!--  /Body -->
+</html>

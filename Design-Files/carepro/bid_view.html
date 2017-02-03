@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CarePro</title>
+
+    <!-- core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-logo">
+                        <h1>
+                            <a href="#">
+                                <img src="../assets/images/logo.png" alt="">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse main-nav" id="collapse">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="calendar_view.html">Care Calendar</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="case_upcoming.html">My Cases</a>
+                                    </li>
+                                    <li>
+                                        <a href="payment_view.html">Payment</a>
+                                    </li>
+                                    <li>
+                                        <a href="edit_profile_view.html">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="../assets/#">My Documents</a>
+                                    </li>
+                                    <li class="header-btn">
+                                        <a href="../index.html" class="btn-out">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!--/header-->
+
+<section class="container wizard-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="bid-number clearfix">
+                <ul>
+                    <li><a href="#">UPCOMING (<span>3</span>)</a></li>
+                    <li><a href="#">PENDING (<span>3</span>)</a></li>
+                    <li><a href="#">COMPLETED</a></li>
+                </ul>
+                <a href="bid_view.html" class="btn btn-bid">BID FOR CASE</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table bid-cases">
+                    <tr>
+                        <th>Cases Available</th>
+                        <th>Details</th>
+                        <th>Duration</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../assets/images/photo_item_2.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="bid-info">
+                            <!--<h2>Desmond Tan</h2>-->
+                            <ul>
+                                <li>
+                                    <span>Location:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li class="gender">
+                                    <span>Gender:</span>
+                                    <span>Male</span>
+                                </li>
+                                <li class="age">
+                                    <span>Age:</span>
+                                    <span>62</span>
+                                </li>
+                                <li>
+                                    <span>Service Venue:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li>
+                                    <span>Address:</span>
+                                    <span>Delta House, 2 Alexandra Road</span>
+                                </li>
+                            </ul>
+                            <div class="bid-info-more">
+                                <span class="fa fa-calendar"></span>
+                                <span>16 Apr </span>
+                                <span></span>
+                                <span>9:00am - 11:00am</span>
+                            </div>
+                            <div class="bid-info-services">
+                                <div>
+                                    <span>Services :</span>
+                                    <span>Task 1</span>
+                                    <span>Task 2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="term">
+                            <div>Long - term</div>
+                            <div>2 hrs</div>
+                            <a href="#" class="btn btn-bid">View more <span>for bidding</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../assets/images/photo_item_3.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="bid-info">
+                            <!--<h2>Desmond Tan</h2>-->
+                            <ul>
+                                <li>
+                                    <span>Location:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li class="gender">
+                                    <span>Gender:</span>
+                                    <span>Female</span>
+                                </li>
+                                <li class="age">
+                                    <span>Age:</span>
+                                    <span>62</span>
+                                </li>
+                                <li>
+                                    <span>Service Venue:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li>
+                                    <span>Address:</span>
+                                    <span>81 Victoria St.</span>
+                                </li>
+                            </ul>
+                            <div class="bid-info-more">
+                                <span class="fa fa-calendar"></span>
+                                <span>16 Apr </span>
+                                <span>( Recurring )</span>
+                                <span>9:00am - 10:00am</span>
+                            </div>
+                            <div class="bid-info-services">
+                                <div>
+                                    <span>Services :</span>
+                                    <span>Task1</span>
+                                    <span>Task2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="term">
+                            <div>Long - term</div>
+                            <div>1 hr / week</div>
+                            <a href="#" class="btn btn-bid">View more <span>for bidding</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../assets/images/photo_item_4.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="bid-info">
+                            <!--<h2>Desmond Tan</h2>-->
+                            <ul>
+                                <li>
+                                    <span>Location:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li class="gender">
+                                    <span>Gender:</span>
+                                    <span>Male</span>
+                                </li>
+                                <li class="age">
+                                    <span>Age:</span>
+                                    <span>62</span>
+                                </li>
+                                <li>
+                                    <span>Service Venue:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li>
+                                    <span>Address:</span>
+                                    <span>Delta House, 2 Alexandra Road</span>
+                                </li>
+                            </ul>
+                            <div class="bid-info-more">
+                                <span class="fa fa-calendar"></span>
+                                <span>16 Apr </span>
+                                <span>( Recurring )</span>
+                                <span>9:00am - 10:00am</span>
+                            </div>
+                            <div class="bid-info-services">
+                                <div>
+                                    <span>Services :</span>
+                                    <span>Task1</span>
+                                    <span>Task2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="term">
+                            <div>Long - term</div>
+                            <div>1 hr / week</div>
+                            <a href="#" class="btn btn-bid">View more <span>for bidding</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../assets/images/photo_item_5.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="bid-info">
+                            <!--<h2>Desmond Tan</h2>-->
+                            <ul>
+                                <li>
+                                    <span>Location:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li class="gender">
+                                    <span>Gender:</span>
+                                    <span>Female</span>
+                                </li>
+                                <li class="age">
+                                    <span>Age:</span>
+                                    <span>62</span>
+                                </li>
+                                <li>
+                                    <span>Service Venue:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li>
+                                    <span>Address:</span>
+                                    <span>Delta House, 2 Alexandra Road</span>
+                                </li>
+                            </ul>
+                            <div class="bid-info-more">
+                                <span class="fa fa-calendar"></span>
+                                <span>16 Apr </span>
+                                <span>( Recurring )</span>
+                                <span>9:00am - 10:00am</span>
+                            </div>
+                            <div class="bid-info-services">
+                                <div>
+                                    <span>Services :</span>
+                                    <span>Task1</span>
+                                    <span>Task2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="term">
+                            <div>Long - term</div>
+                            <div>1 hr / week</div>
+                            <a href="#" class="btn btn-bid">View more <span>for bidding</span></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../assets/images/photo_item_6.jpg" alt="">
+                            </div>
+                        </td>
+                        <td class="bid-info">
+                            <!--<h2>Desmond Tan</h2>-->
+                            <ul>
+                                <li>
+                                    <span>Location:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li class="gender">
+                                    <span>Gender:</span>
+                                    <span>Female</span>
+                                </li>
+                                <li class="age">
+                                    <span>Age:</span>
+                                    <span>62</span>
+                                </li>
+                                <li>
+                                    <span>Service Venue:</span>
+                                    <span>Punggol Town</span>
+                                </li>
+                                <li>
+                                    <span>Address:</span>
+                                    <span>Delta House, 2 Alexandra Road</span>
+                                </li>
+                            </ul>
+                            <div class="bid-info-more">
+                                <span class="fa fa-calendar"></span>
+                                <span>16 Apr </span>
+                                <span>( Recurring )</span>
+                                <span>9:00am - 10:00am</span>
+                            </div>
+                            <div class="bid-info-services">
+                                <div>
+                                    <span>Services :</span>
+                                    <span>Task1</span>
+                                    <span>Task2</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="term">
+                            <div>Long - term</div>
+                            <div>3 hrs / week</div>
+                            <a href="#" class="btn btn-bid">View more <span>for bidding</span></a>
+                        </td>
+                    </tr>
+                </table>
+                <ul class="prev-next-nav clearfix">
+                    <li><a href="#"><span class="fa fa-chevron-left"></span>PREVIUOS</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">NEXT<span class="fa fa-chevron-right"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap-rating.min.js"></script>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

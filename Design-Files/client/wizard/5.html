@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Client</title>
+
+    <!-- core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../assets/css/jquery-ui.css" rel="stylesheet">
+
+    <link href="../../assets/css/main.css" rel="stylesheet">
+
+    <!--     <link href="../..assets/css/responsive.css" rel="stylesheet"> -->
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="../../assets/images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="../../assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="../../assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+          href="../../assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../../assets/images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<body>
+
+<header class="h-page">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="header-logo">
+                        <h1>
+                            <a href="#">
+                                <img src="../../assets/images/logo.png" alt="">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse main-nav" id="collapse">
+                                <ul class="clearfix">
+                                    <li class="active">
+                                        <a href="../care_receipient.html">Care Recipients</a>
+                                    </li>
+                                    <li>
+                                        <a href="../visit_view.html">Visits</a>
+                                    </li>
+                                    <li>
+                                        <a href="../calendar_view.html">Care Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a href="../particulars_view.html">My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="../payment_view.html">Payment</a>
+                                    </li>
+                                    <li class="header-btn">
+                                        <a href="../../index.html" class="btn-out">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header><!--/header-->
+
+<section class="container wizard-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="wizard-steps">
+                <li class="selected">
+                    <span class="fa fa-clock-o"></span>
+                    <span>Schedule Visit</span>
+                </li>
+                <li>
+                    <span class="fa fa-lock"></span>
+                    <span>Payment Matters</span>
+                </li>
+                <li>
+                    <span class="fa fa-user-plus"></span>
+                    <span>Upload Picture</span>
+                </li>
+            </ul>
+
+            <form action="#">
+                <h2>SCHEDULE A VISIT</h2>
+
+                <div class="care-needs-accordion">
+                    <div class="panel-group" id="accordion">
+                        <!-- Panel-1 -->
+                        <div class="panel panel-default">
+                            <!-- Header-panel-1 -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                       class="accordion-toggle collapsed">Recipient Profile</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse">
+                                <!-- Content-panel-1 -->
+                                <div class="panel-body">
+                                    <div class="about-info">
+                                        <ul>
+                                            <li class="half">
+                                                <ul>
+                                                    <li>
+                                                        <label for="postal">Postal Code</label>
+                                                        <input type="text" name="postal" id="postal"
+                                                               placeholder="478202">
+                                                    </li>
+                                                    <li>
+                                                        <label for="unit">Unit No.</label>
+                                                        <input type="text" name="unit" id="unit" placeholder="#08-382">
+                                                    </li>
+                                                    <li>
+                                                        <label for="block">Block No.</label>
+                                                        <input type="text" name="block" id="block" placeholder="202">
+                                                    </li>
+                                                    <li>
+                                                        <label for="street">Street</label>
+                                                        <input type="text" name="street" id="street"
+                                                               placeholder="Choa Chu Kang Ave 10">
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Panel-2 -->
+                        <div class="panel panel-default">
+                            <!-- Header-panel-2 -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title ">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                       class="accordion-toggle collapsed">CarePro Preferences</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <!-- Content-panel-2 -->
+                                <div class="panel-body">
+                                    <div class="care-needs-gender">
+                                        <label for="gender">Gender</label>
+                                        <select name="gender" id="gender">
+                                            <option value="0" selected>Male</option>
+                                            <option value="1">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Panel-3 -->
+                            <div class="panel panel-default">
+                                <!-- Header-panel-3 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title ">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                           class="accordion-toggle collapsed care-active">Visit Schedule</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <!-- Content-panel-3 -->
+                                    <div class="panel-body">
+                                        <div>
+                                            <p>Do you require 24hr Care/Live-in care?</p>
+
+                                            <div class="check-button">
+                                                <label>
+                                                    <input type="radio" name="yes-no-question"
+                                                           checked><span></span><span>Yes</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio"
+                                                           name="yes-no-question"><span></span><span>No</span>
+                                                </label>
+                                            </div>
+                                            <div class="visit-schedule_block">
+                                                <div class="date-choose">
+                                                    <label for="datepicker-1_1">Date</label>
+                                                    <input type="text" name="datepicker-1_1" id="datepicker-1_1"
+                                                           placeholder="DD/MM/YYYY">
+                                                    <label for="datepicker-2_1">To</label>
+                                                    <input type="text" name="datepicker-2_1" id="datepicker-2_1"
+                                                           placeholder="DD/MM/YYYY">
+                                                    <a class="btn-certification add-schedule-block"><span class="fa fa-plus"></span></a>
+                                                </div>
+                                                <div class="time-range">
+                                                    <label>Start time</label>
+                                                    <select name="start-1" id="start-1">
+                                                        <option value="0" selected>00:00</option>
+                                                        <option value="1">01:00</option>
+                                                    </select>
+                                                    <label>To</label>
+                                                    <select name="end-1" id="end-1">
+                                                        <option value="0" selected>00:00</option>
+                                                        <option value="1">01:00</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <p>Do you require this schedule to be repeated?</p>
+
+                                            <div class="check-button">
+                                                <label>
+                                                    <input type="radio" name="yes-no-question-2"
+                                                           checked><span></span><span>Yes</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio"
+                                                           name="yes-no-question-2"><span></span><span>No</span>
+                                                </label>
+                                            </div>
+
+                                            <p>Repeat schedule every:</p>
+
+                                            <div class="care-week">
+                                                <ul class="check-button">
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="day-of-week"
+                                                                   checked><span></span><span>Mon</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   name="day-of-week"><span></span><span>Tues</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="day-of-week"
+                                                                   checked><span></span><span>Wed</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   name="day-of-week"><span></span><span>Thu</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   name="day-of-week"><span></span><span>Fri</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   name="day-of-week"><span></span><span>Sat</span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox"
+                                                                   name="day-of-week"><span></span><span>Sun</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Panel-4 -->
+                            <div class="panel panel-default">
+                                <!-- Header-panel-4 -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title ">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                           class="accordion-toggle collapsed">Type of Service</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse">
+                                    <!-- Content-panel-2 -->
+                                    <div class="panel-body">
+                                        <div>
+
+                                            <p>Do you have any language requests?</p>
+
+                                            <div class="about-info personal">
+                                                <ul class="check-list clearfix">
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> English
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Chinese
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Malay
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Tamil
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Hokkien
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Teochew
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Cantonese
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Hakka
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Hainanese
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label>
+                                                            <input type="checkbox" name="language"
+                                                                   value=""/><span></span> Others
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <ul class="clearfix update-profile-care">
+                                                <li>
+                                                    <input type="checkbox" name="medication_reminders"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_medication.png"
+                                                             alt="Medication Reminders">
+
+                                                        <div>Medication Reminders</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="escort_services"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_escort.png"
+                                                             alt="Escort Services">
+
+                                                        <div>Escort Services</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="companionship"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_companion.png"
+                                                             alt="Companionship">
+
+                                                        <div>Companionship</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="description" id="medication_reminders">
+                                                <fieldset>
+                                                    <ul>
+                                                        <li>
+                                                            <label>
+                                                                <input type="checkbox" name="skillsets" value=""/>
+                                                                <span></span> Remind senior to take medication
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="checkbox" name="skillsets" value=""/>
+                                                                <span></span> Assist to feed senior pre-packed
+                                                                medication
+                                                            </label>
+                                                        </li>
+                                                        <li>
+                                                            <label>
+                                                                <input type="checkbox" name="skillsets" value=""/>
+                                                                <span></span> Others
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </fieldset>
+                                            </div>
+
+                                            <div class="description" id="escort_services">
+                                                <h4>Escort Services</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <div class="description" id="companionship">
+                                                <h4>Companionship</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <ul class="clearfix update-profile-care">
+                                                <li>
+                                                    <input type="checkbox" name="staying_active"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_active.png"
+                                                             alt="Staying Active">
+
+                                                        <div>Staying Active</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="house_keeping"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_house.png"
+                                                             alt="House Keeping">
+
+                                                        <div>House Keeping</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="personal_care"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_personal.png"
+                                                             alt="Personal Care & Hygiene">
+
+                                                        <div>Personal Care & Hygiene</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="description" id="staying_active">
+                                                <h4>Staying Active</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <div class="description" id="house_keeping">
+                                                <h4>House Keeping</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <div class="description" id="personal_care">
+                                                <h4>Personal Care & Hygiene</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <ul class="clearfix update-profile-care">
+                                                <li>
+                                                    <input type="checkbox" name="check_in_visit"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_visit.png"
+                                                             alt="Check In Visit">
+
+                                                        <div>Check In Visit</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="meal_prep_groceries"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_meal.png"
+                                                             alt="Meal Prep & Groceries">
+
+                                                        <div>Meal Prep & Groceries</div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="night_surveillance"/>
+
+                                                    <div>
+                                                        <img src="../../assets/images/care_surveillance.png"
+                                                             alt="Night Surveillance">
+
+                                                        <div>Night Surveillance</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                            <div class="description" id="check_in_visit">
+                                                <h4>Check In Visit</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <div class="description" id="meal_prep_groceries">
+                                                <h4>Meal Prep & Groceries</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+
+                                            <div class="description" id="night_surveillance">
+                                                <h4>Night Surveillance</h4>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                                                    malesuada
+                                                    enim. Nunc hendrerit ante eget
+                                                    enim elementum dictum. Nullam diam urna, maximus a tellus in,
+                                                    ultricies
+                                                    pharetra velit. Lorem ipsum
+                                                    dolor sit amet, consectetur adipiscing elit. Duis a malesuada enim.
+                                                    Nunc
+                                                    hendrerit ante eget.</p>
+                                            </div>
+                                            <div class="instruction">
+                                                <label>Special Instruction</label>
+                                        <textarea name="medical-condition" id="medical-condition" cols="30"
+                                                  rows="10"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="clearfix">
+                <a href="6.html" class="btn-main btn-next">Next</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="f-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-6 clearfix">
+                <div class="footer-logo">
+                    <img src="../../assets/images/footer_logo.png" alt="logo">
+                </div>
+                <div class="footer-links">
+                    <h3>USEFUL LINKS</h3>
+
+                    <div class="clearfix">
+                        <ul class="first-list">
+                            <li><a href="#">Process</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Care Pros</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">In-Home Care Agreement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>CONTACT US</h3>
+
+                <div class="clearfix">
+                    <ul class="first-list">
+                        <li>SMU Business Innovation Generator</li>
+                        <li>#B1-40, School of Accountancy</li>
+                        <li>60 Stamford Road</li>
+                        <li>Singapore 178900</li>
+                    </ul>
+                    <ul class="tel-email">
+                        <li>Phone: <a href="tel:+65 9720 9113">+65 9720 9113</a></li>
+                        <li>Email: <a href="mailto:hello@homage.sg">hello@homage.sg</a></li>
+                        <li>2016 @All Rights Reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../assets/js/jquery.js"></script>
+<script src="../../assets/js/bootstrap.min.js"></script>
+<script src="../../assets/js/bootstrap-rating.min.js"></script>
+<script src="../../assets/js/moment.min.js"></script>
+<script src="../../assets/js/fullcalendar.js"></script>
+<script src="../../assets/js/calendar_events.js"></script>
+<script src="../../assets/js/jquery-ui.js"></script>
+<script src="../../assets/js/jquery.cookie.js"></script>
+<script src="../../assets/js/moment-with-locales.js"></script>
+<script src="../../assets/js/bootstrap-datetimepicker.js"></script>
+<script src="../../assets/js/dropzone.js"></script>
+
+<script src="../../assets/js/main.js"></script>
+<!--     <script src="../../assets/js/jquery.prettyPhoto.js"></script>
+    <script src="../../assets/js/jquery.isotope.min.js"></script> -->
+<!-- 	<script src="../../assets/js/wow.min.js"></script> -->
+</body>
+</html>

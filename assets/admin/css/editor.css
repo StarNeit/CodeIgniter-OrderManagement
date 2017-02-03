@@ -1,0 +1,23 @@
+
+code{
+	padding: 2px 4px;
+	color: #d14;	
+	white-space: pre; 	
+}
+
+pre{
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857;
+	word-break: break-all;
+	word-wrap: break-word;
+	color: #333333;
+	background-color: whitesmoke;
+	border: 1px solid #cccccc;
+	
+	border-radius: 0;
+	border-color: #dddddd;
+	background-color: #fbfbfb;
+}

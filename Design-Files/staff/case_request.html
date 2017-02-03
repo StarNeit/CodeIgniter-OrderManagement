@@ -1,0 +1,671 @@
+﻿<!DOCTYPE html>
+<!--
+BeyondAdmin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.2.0
+Version: 1.0.0
+Purchase: http://wrapbootstrap.com
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Homage - Staff</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Custom styles-->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <div class="logo"></div>
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+    <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+            <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> Dashboard </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="daily_view.html">
+                            <i class="menu-icon fa fa-gears"></i>
+                            <span class="menu-text"> Operations </span>
+                        </a>
+                    </li>
+                    <!--Databoxes-->
+                    <li>
+                        <a href="carepro_view.html">
+                            <i class="menu-icon fa fa-heartbeat"></i>
+                            <span class="menu-text"> CarePro </span>
+                        </a>
+                    </li>
+                    <!--Widgets-->
+                    <li>
+                        <a href="client_view.html">
+                            <i class="menu-icon fa fa-user"></i>
+                            <span class="menu-text"> Client </span>
+                        </a>
+                    </li>
+                    <!--Profile-->
+                    <li class="active">
+                        <a href="case_view.html">
+                            <i class="menu-icon fa fa-file-text"></i>
+                            <span class="menu-text"> Cases </span>
+                        </a>
+                    </li>
+                    <!--Calendar-->
+                    <li>
+                        <a href="billing_view.html">
+                            <i class="menu-icon fa fa-calendar"></i>
+                            <span class="menu-text"> Billing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="staff_view.html">
+                            <i class="menu-icon fa fa-edit"></i>
+                            <span class="menu-text"> Staff Management </span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">Home</a>
+                        </li>
+                        <li><a href="cases_view.html">Cases</a></li>
+                        <li class="active">Siah Hong Siew</li>
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                <!-- Page Header -->
+                <div class="page-header position-relative">
+                    <div class="header-title">
+                        <h1>
+                            Siah Hong Siew
+                        </h1>
+                    </div>
+                </div>
+                <!-- /Page Header -->
+                <!-- Page Body -->
+                <div class="page-body">
+                    <!-- Tabs -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs" id="myTab7">
+                                    <li class="tab-red">
+                                        <a href="case_detail.html">
+                                            Personal Info
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="case_request.html">
+                                            Visit Request
+                                            <span class="badge badge-success">
+                                                1
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="tab-red">
+                                        <a href="case_history.html">
+                                            Visit History
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content radius-bordered">
+                                    <div class="tab-pane in active">
+                                        <!--Registration Form Starts-->
+                                        <div class="row">
+                                            <div class="col-lg-12 col-sm-12 col-xs-12">
+
+                                                <div class="form-title">
+                                                    About Care Recipient (<a href="client_detail.html">Lim Keng Siang</a>'s Mother)
+                                                </div>
+
+                                                <div class="profile-container">
+                                                    <div class="profile-header row">
+                                                        <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                                                            <img src="assets/img/avatars/hongsiew.jpg" alt="" class="header-avatar" />
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-8 col-sm-12 profile-info">
+                                                            <div class="header-fullname">Siah Hong Siew</div>
+                                                            <div class="header-information">
+                                                                Lorem ipsum dolor sit amet consectur adipiscing elit. Morbi in pulvinar urna.
+                                                                Curabitur varius lectus eu libero ...
+                                                            </div>
+                                                            <br/>
+                                                            <a href="client_detail.html" class="btn btn-info btn-sm btn-follow">
+                                                                <i class="fa fa-user"></i>
+                                                                View Client
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12 profile-stats">
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value palegreen">3</div>
+                                                                    <div class="stats-title">UPCOMING</div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value info">3</div>
+                                                                    <div class="stats-title">PENDING</div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 stats-col">
+                                                                    <div class="stats-value blueberry">12</div>
+                                                                    <div class="stats-title">COMPLETED</div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    <i class="glyphicon glyphicon-map-marker"></i> Punggol East
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    Rating: <strong>4.3 / 5</strong>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 inlinestats-col">
+                                                                    Age: <strong>62</strong>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--/Registration Form Ends-->
+                                    </div>
+                                </div>
+                                <!--/Tab Content Ends -->
+                                <br/>
+                                <div class="widget">
+                                    <div class="widget-header bg-palegreen">
+                                        <i class="widget-icon fa fa-arrow-down"></i>
+                                        <span class="widget-caption">Visit No.02042016</span>
+                                        <div class="widget-buttons">
+                                            <a href="#" data-toggle="collapse">
+                                                <i class="fa fa-minus"></i>
+                                            </a>
+                                        </div><!--Widget Buttons-->
+                                    </div><!--Widget Header-->
+                                    <div class="widget-body">
+
+                                        <div class="form-title">
+                                            Where
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="col-lg-6">
+                                                 <div class="form-group">
+                                                    <label for="nameInput">Block Number:</label>
+                                                    <input type="text" class="form-control" name="firstName" value="202"
+                                                    data-bv-notempty="true"
+                                                    data-bv-notempty-message="This field is required and cannot be empty." />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="nameInput">Street:</label>
+                                                    <input type="text" class="form-control" name="lastName" value="Choa Chu Kang Ave 10"
+                                                    data-bv-notempty="true"
+                                                    data-bv-notempty-message="This field is required and cannot be empty." />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="col-lg-6">
+                                             <div class="form-group">
+                                                <label for="nameInput">Unit Number:</label>
+                                                <input type="text" class="form-control" name="firstName" value="#08-382"
+                                                data-bv-notempty="true"
+                                                data-bv-notempty-message="This field is required and cannot be empty." />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="nameInput">Postal Code:</label>
+                                                <input type="text" class="form-control" name="lastName" value="478202"
+                                                data-bv-notempty="true"
+                                                data-bv-notempty-message="This field is required and cannot be empty." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-title">
+                                    CarePro Preferences
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label>Do you require 24hr Care/Live-in care?</label><br/><br/>
+                                                <div class="control-group request">
+                                                    <div class="radio-inline">
+                                                        <label>
+                                                            <input name="form-field-radio" type="radio" class="colored-success" checked="checked">
+                                                            <span class="text"> Yes</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio-inline">
+                                                        <label>
+                                                            <input name="form-field-radio" type="radio" class="colored-success">
+                                                            <span class="text"> No</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="form-group">
+                                                <label for="regidateInput">Preferred CarePro Gender:</label>
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Female <span class="caret"></span></button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Male</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Female</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-12 request">
+                                            Do you have any language requests?<br/>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue" checked="checked">
+                                                    <span class="text">English</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue" checked="checked">
+                                                    <span class="text">Mandarin</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Malay</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Tamil</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Hokkien</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Teochew</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Cantonese</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Hakka</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Hainanese</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue">
+                                                    <span class="text">Others</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-title">
+                                    Type of Care
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 care-services">
+                                        <div class="col-lg-12">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue" checked="checked">
+                                                    <span class="text">Medication Reminders</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-blue" checked="checked">
+                                                    <span class="text">Escort Services</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Companionship</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Staying Active</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">House Keeping</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Personal Care & Hyigene</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Check In Visit</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Meal Prep & Groceries</span>
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" class="colored-basic">
+                                                    <span class="text">Night Surveillance</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!--div class="col-lg-3 col-sm-4 col-xs-12">
+                                            <div class="radius-bordered text-center">
+                                                <div class="box-top no-padding">
+                                                    <img src="assets/img/temp1.png" alt="">
+                                                </div>
+                                                <span>Medication Reminders</span>
+                                            </div>
+                                        </div-->
+                                    </div>
+                                </div>
+                                <br/>
+                                <!-- Table Starts -->
+                                <div class="row ">
+                                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                                        <div class="well with-header">
+                                            <div class="header bg-blue">
+                                                Details
+                                            </div>
+                                             <div class="field_wrapper">
+                                                  <div>
+                                                      <input type="text" name="field_name[]" value="" class="col-md-7" placeholder="Text Here"/>
+                                                      <select class="selectpicker col-md-4">
+                                                          <optgroup label="Picnic">
+                                                            <option>Mustard</option>
+                                                            <option>Ketchup</option>
+                                                            <option>Relish</option>
+                                                          </optgroup>
+                                                          <optgroup label="Camping">
+                                                            <option>Tent</option>
+                                                            <option>Flashlight</option>
+                                                            <option>Toilet Paper</option>
+                                                          </optgroup>
+                                                       </select>
+                                                       <a href="javascript:void(0);" class="add_button" title="Add field"><i class="add_icon fa fa-plus-circle"></i></a>
+                                                   </div>
+                                               </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                  
+                                
+                                <!-- /Table Ends -->
+                                <div class="form-title">
+                                    Special Instructions
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="col-lg-12">
+                                            <textarea rows="5" cols="5" class="form-control">1) Assist to feed senior pre-packed medication twice daily (8am and 8pm). 2) Escort senior for a slow walk near home.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br/>
+                                <!-- Matching CarePro -->
+                                <div class="widget-tab">
+                                    <h6 class="row-title before-green">MATCHING CAREPRO(S)</h6>
+                                </div>
+                                <br/>
+                                <div class="row carepro">
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        <div class="databox databox-xlg databox-halved databox-shadowed databox-vertical no-margin-bottom">
+                                            <div class="databox-top bg-white padding-10">
+                                                <div class="col-lg-4 col-sm-4 col-xs-4">
+                                                    <img src="assets/img/avatars/aixian.jpg" style="width:75px; height:75px;" class="image-circular bordered-3 bordered-palegreen">
+                                                </div>
+                                                <div class="col-lg-6 col-sm-8 col-xs-8 text-align-left padding-10">
+                                                    <span class="databox-header carbon no-margin">Lim Ai Xian</span>
+                                                    <span class="databox-text lightcarbon no-margin green"> 
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2 margin-top-20">
+                                                    <button class="btn btn-info btn-sm pull-right">Assign</button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white no-padding">
+                                                <div class="databox-row row-12">
+                                                    <div class="databox-row row-6 no-padding">
+                                                        <div class="databox-cell cell-4 no-padding text-align-center bordered-right bordered-platinum">
+                                                            <span class="databox-text sonic-silver  no-margin">District</span>
+                                                            <span class="databox-number lightcarbon no-margin">Punggol East</span>
+                                                        </div>
+                                                        <div class="databox-cell cell-4 no-padding text-align-center bordered-right bordered-platinum">
+                                                            <span class="databox-text sonic-silver no-margin">Rating</span>
+                                                            <span class="databox-number lightcarbon no-margin">4.3 / 5</span>
+                                                        </div>
+                                                        <div class="databox-cell cell-4 no-padding text-align-center">
+                                                            <span class="databox-text sonic-silver no-margin">Age</span>
+                                                            <span class="databox-number lightcarbon no-margin">62</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                                        <div class="databox databox-xlg databox-halved databox-shadowed databox-vertical no-margin-bottom">
+                                            <div class="databox-top bg-white padding-10">
+                                                <div class="col-lg-4 col-sm-4 col-xs-4">
+                                                    <img src="assets/img/avatars/amelia.jpg" style="width:75px; height:75px;" class="image-circular bordered-3 bordered-palegreen">
+                                                </div>
+                                                <div class="col-lg-6 col-sm-8 col-xs-8 text-align-left padding-10">
+                                                    <span class="databox-header carbon no-margin">Nur Amelia</span>
+                                                    <span class="databox-text lightcarbon no-margin green"> 
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2 margin-top-20">
+                                                    <button class="btn btn-info btn-sm pull-right">Assign</button>
+                                                </div>
+                                            </div>
+                                            <div class="bg-white no-padding">
+                                                <div class="databox-row row-12">
+                                                    <div class="databox-row row-6 no-padding">
+                                                        <div class="databox-cell cell-4 no-padding text-align-center bordered-right bordered-platinum">
+                                                            <span class="databox-text sonic-silver  no-margin">District</span>
+                                                            <span class="databox-number lightcarbon no-margin">Punggol East</span>
+                                                        </div>
+                                                        <div class="databox-cell cell-4 no-padding text-align-center bordered-right bordered-platinum">
+                                                            <span class="databox-text sonic-silver no-margin">Rating</span>
+                                                            <span class="databox-number lightcarbon no-margin">4.3 / 5</span>
+                                                        </div>
+                                                        <div class="databox-cell cell-4 no-padding text-align-center">
+                                                            <span class="databox-text sonic-silver no-margin">Age</span>
+                                                            <span class="databox-number lightcarbon no-margin">62</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Matching CarePro -->
+                            </div>
+
+                            <div class="form-title">
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-6 pull-right">
+                                    <input class="btn btn-palegreen pull-right" type="submit" value="Save" />
+                                </div>
+                            </div>
+
+                        </div><!--Widget Body-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br/><br/>
+        <!--/tabs-->
+    </div>
+    <!-- /Page Body -->
+</div>
+<!-- /Page Content -->
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+</div>
+<!-- /Page Body -->
+</div>
+<!-- /Page Content -->
+</div>
+<!-- /Page Container -->
+<!-- Main Container -->
+
+</div>
+
+<!--Basic Scripts-->
+<script src="assets/js/jquery-2.0.3.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/add-remove.js"></script>
+<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="assets/js/beyond.js"></script>
+
+<!--Google Analytics::Demo Only-->
+<script>
+(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'UA-52103994-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+ 
+</body>
+<!--  /Body -->
+</html>
